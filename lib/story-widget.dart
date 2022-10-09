@@ -9,10 +9,12 @@ class StoryWidget extends StatelessWidget {
   StoryWidget(this.post);
   @override
   Widget build(BuildContext context) {
-    return CircleAvatar(
-      radius: 40,
-      backgroundImage: NetworkImage(post.image ?? ''),
-      
+    return Container(
+      padding: const EdgeInsets.all(5),
+      child: CircleAvatar(
+        radius: 40,
+        backgroundImage: NetworkImage(post.image ?? ''),
+      ),
     );
   }
 }
