@@ -28,6 +28,13 @@ class myInstagram extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount: posts.length,
                 itemBuilder: (context, index) {
+                  if (index == 0) {
+                    return CircleAvatar(
+                      radius: 40,
+                      backgroundColor: Color.fromARGB(255, 214, 206, 181),
+                      child: Icon(Icons.add),
+                    );
+                  }
                   return StoryWidget(posts[index].post!);
                 },
               ),
