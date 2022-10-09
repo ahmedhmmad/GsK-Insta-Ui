@@ -32,8 +32,7 @@ class myInstagram extends StatelessWidget {
                 },
               ),
             ),
-            SizedBox(
-              height: 500,
+            Expanded(
               child: ListView.builder(
                   itemCount: posts.length,
                   itemBuilder: (context, index) {
