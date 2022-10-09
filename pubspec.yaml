@@ -30,6 +30,7 @@ flutter:
   assets:
      - assets/images/Yasmin.jpeg
      - assets/images/Ahmed.jpeg
+     - assets/icons/send.png
   
 
 
