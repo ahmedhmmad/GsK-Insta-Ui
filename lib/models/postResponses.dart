@@ -1,11 +1,11 @@
 import 'package:instagramui/models/post.dart';
 import 'package:instagramui/models/user.dart';
 
-class postResponses {
+class PostResponses {
   User? user;
   Post? post;
 
-  postResponses.fromJson(Map<String, dynamic> data) {
+  PostResponses.fromJson(Map<String, dynamic> data) {
     user = User.fromJson(data['user']);
     post = Post.fromJson(data['post']);
   }

@@ -1,3 +1,5 @@
+import '../models/postResponses.dart';
+
 List<Map<String, dynamic>> postResponses = [
   {
     'user': {
@@ -5,7 +7,7 @@ List<Map<String, dynamic>> postResponses = [
       'image':
           'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80'
     },
-    'text': {
+    'post': {
       'noLikes': 30,
       'content': 'This is Hussam post',
       'image':
@@ -18,7 +20,7 @@ List<Map<String, dynamic>> postResponses = [
       'image':
           'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
     },
-    'text': {
+    'post': {
       'noLikes': 35,
       'content': 'This is Huda post',
       'image':
@@ -31,7 +33,7 @@ List<Map<String, dynamic>> postResponses = [
       'image':
           'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
     },
-    'text': {
+    'post': {
       'noLikes': 90,
       'content': 'This is Ashraf post',
       'image':
@@ -39,3 +41,6 @@ List<Map<String, dynamic>> postResponses = [
     }
   }
 ];
+
+List<PostResponses> posts =
+    postResponses.map((e) => PostResponses.fromJson(e)).toList();
